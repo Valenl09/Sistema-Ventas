@@ -1,0 +1,93 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261111231915
+Nombre de usuario: DESKTOP-KJ6GU19\Valentina
+Usuario RunAs: DESKTOP-KJ6GU19\Valentina
+Nombre de la configuración: 
+Máquina: DESKTOP-KJ6GU19 (Microsoft Windows NT 10.0.26300.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 6356
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\Valentina\Desktop\auditoria_completa.txt
+PS C:\WINDOWS\System32> cd $HOME\Desktop
+PS C:\Users\Valentina\Desktop> mkdir Sistema_Ventas
+
+
+    Directorio: C:\Users\Valentina\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/11/2026     23:19                Sistema_Ventas
+
+
+PS C:\Users\Valentina\Desktop> cd Sistema_Ventas
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> mkdir Frontend, Backend, BaseDatos
+
+
+    Directorio: C:\Users\Valentina\Desktop\Sistema_Ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/11/2026     23:19                Frontend
+d-----        11/11/2026     23:19                Backend
+d-----        11/11/2026     23:19                BaseDatos
+
+
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> echo "Version 1.0 del Sistema de Ventas" > README.md
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Version 1.0 del Sistema de Ventas"
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> git init
+
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> git commit -m "Día 1: Despliegue de la estructura base"
+
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> git config --global user.name Valenl09
+
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> git config --global user.email valenlevar@gmail.com
+
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> git remote add origin https://github.com/Valenl09/Sistema-Ventas.git
+
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> git push -u origin main
+
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> git commit -m "Día 1: Despliegue de la estructura base"
+
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> git branch -M main
+
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> git push -u origin main
+
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> echo "Conectando al servidor SQL..." > BaseDatos\conexion.ps1
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Conectando al servidor SQL..."
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> echo "Actualizacion Dia 2: Modulo DB agregado" >> README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Actualizacion Dia 2: Modulo DB agregado"
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> mkdir Pruebas_Unitarias
+
+
+    Directorio: C:\Users\Valentina\Desktop\Sistema_Ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/11/2026     23:28                Pruebas_Unitarias
+
+
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> git commit -m "Día 2: Agregados scripts de DB y carpeta de pruebas"
+
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> git push
+
+PS C:\Users\Valentina\Desktop\Sistema_Ventas> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261111232925
+**********************
